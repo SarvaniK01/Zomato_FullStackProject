@@ -1,0 +1,26 @@
+- Auth API (Login and Signup)
+//GET and POST(name,email for signup) request
+
+- Food (To get the Food)
+// GET request
+
+- Restaurants (To get Restaurants)
+// GET request
+
+- Menu (To get the Menus)
+// GET request
+
+-Order (To give the Orders)
+// POST request
+
+-Payments
+-> Razorpay API
+
+- Reviews (To post our reviews)
+// POST request
+
+- User
+// GET & POST request
+
+- Images
+// GET and POST request
