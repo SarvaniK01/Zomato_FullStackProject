@@ -6,17 +6,19 @@ const Router = express.Router();
 
 
 /*
-Route               /review
-Description         Post a review using id
-Parameters          _id
+Route               /new
+Description         Add new review
+Parameters          none
 Access              Public
 Methods             POST
 */
 
-Router.post("/review/:_id", async(request,response)=>{
+Router.post("/new", async(request,response)=>{
     try {
-        const { newReview } = request.body;
-        const addNewReview = ReviewModel.create(newReview);
+        const { reviewData } = request.body;
+
+        await ReviewModel.create(reviewData);
+
         return response.json({reviewText: addNewReview, message: "Your Review has been successfully added!"});
     } 
     catch (error) {
@@ -33,12 +35,13 @@ Access              Public
 Methods             DELETE
 */
 
-Router.delete("/review/delete/:_id", async(request,response)=>{
+Router.delete("/delete/:_id", async(request,response)=>{
     try {
-        const deleteId = request.params._id;
-        const deleteReview = await ReviewModel.findOneAndDelete(deleteId);
+        const {_id} = request.params;
 
-        return response.json({deleteReview, message:"Your review has been deleted"});
+        await ReviewModel.findByIdAndDelete(_id);
+
+        return response.json({message:"Your review has been deleted"});
     } 
     catch (error) {
         return response.status(500).json({error: error.message});    
