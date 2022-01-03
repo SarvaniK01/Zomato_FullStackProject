@@ -1,0 +1,11 @@
+Cluster name: ZomatoMasterCluster
+
+username: zomato
+password: zomatomaster
+
+mongodb+srv://zomato:<password>@zomatomastercluster.azk8x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+useNewUrlParser: true,
+useFindAndModify: false,
+useCreateIndex: true,
+useUnifiedTopology: true

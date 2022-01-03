@@ -14,7 +14,7 @@ const upload = multer({storage});
 
 /*
 Route               \
-Description         uploading the given image to AWS S3 Bucket and
+Description         Uploading the given image to AWS S3 Bucket and
 Parameters          _id
 Access              Public
 Method              POST
@@ -40,7 +40,6 @@ Router.post("/", upload.single("file"), async(request,response)=>{
 });
 
 export default Router;
-
 
 
 
