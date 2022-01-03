@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/navbar";
 const HomeLayout = (props) =>{
     return(
         <>
-            <div className="container mx-auto">
+            <div className="">
                 <Navbar/>
                 {/* {props.children} */}
             </div>
