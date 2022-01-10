@@ -6,7 +6,9 @@ const DeliveryCarousal = () => {
     return(
         <>
             <h1 className="text-xl font-semibold my-3">Order Food Online</h1>
-            <div className="flex flex-wrap justify-between gap-3">
+            <div className="flex flex-wrap justify-evenly">
+                <DeliveryFoodCategory/>
+                <DeliveryFoodCategory/>
                 <DeliveryFoodCategory/>
                 <DeliveryFoodCategory/>
                 <DeliveryFoodCategory/>

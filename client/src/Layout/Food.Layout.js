@@ -1,17 +1,18 @@
 import React from "react";
-import FoodTab from "../Components/FoodTab";
-import Navbar from "../Components/Navbar/navbar";
 
-const HomeLayout = (props) =>{
+import Navbar from "../Components/Navbar/navbar";
+import FoodTab from "../Components/FoodTab";
+
+const FoodLayout = (props) =>{
     return(
         <>
             <div className="">
                 <Navbar/>
+                <FoodTab/>
                 {/* {props.children} */}
             </div>
         </>
     )
 };
 
-export default HomeLayout;
-
+export default FoodLayout;

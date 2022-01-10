@@ -5,7 +5,7 @@ const DiningOutFoodCategory = () => {
     return(
         <>
             <div className="bg-white rounded-md shadow">
-                <div className="w-40 h-40">
+                <div className="w-41 h-40">
                     <img
                         src="https://b.zmtcdn.com/data/collections/b22194cb38ed18a5200b387ad8f243f0_1582015782.jpg"
                         alt="restaurant-img"

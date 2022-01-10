@@ -1,17 +1,18 @@
 import React from "react";
-import FoodTab from "../Components/FoodTab";
-import Navbar from "../Components/Navbar/navbar";
 
-const HomeLayout = (props) =>{
+import Navbar from "../Components/Navbar/navbar";
+import NightLife from "../Components/NightLife";
+
+const NightLifeLayout = (props) =>{
     return(
         <>
             <div className="">
-                <Navbar/>
+                <Navbar />
+                <NightLife />
                 {/* {props.children} */}
             </div>
         </>
-    )
+    );
 };
 
-export default HomeLayout;
-
+export default NightLifeLayout;
