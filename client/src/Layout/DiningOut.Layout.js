@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "../Components/Navbar/navbar";
 import DiningOut from "../Components/DiningOut";
+import FoodTab from "../Components/FoodTab";
 
 
 const DiningOutLayout = (props) =>{
@@ -10,6 +11,7 @@ const DiningOutLayout = (props) =>{
             <div className="">
                 <Navbar />
                 <DiningOut />
+                <FoodTab/>
                 {/* {props.children} */}
             </div>
         </>
